@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="body">
+    <h1 class="h1">TEACHER PAGE</h1>
+
+    <form
+      action="/api/teacher-back"
+      enctype="application/x-www-form-urlencoded"
+      method="post"
+    >
+      <button class="h2" type="submit" name="teacher" value="teacher">
+        teacher
+      </button>
+      <button class="h2" type="submit" name="group" value="group">group</button>
+      <button class="h2" type="submit" name="student" value="student">
+        student
+      </button>
+      <button type="submit" class="h2" name="courses" value="courses">
+        course
+      </button>
+      <button class="h2" type="submit" name="Menu" value="Menu">Menu</button>
+    </form>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+      id="CreatedUsersBtn"
+    >
+      Created Teacher
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Created Teacher
+            </h1>
+            <button
+              type="button"
+              -+
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body , d-flex ,">
+            <form
+              enctype="application/x-www-form-urlencoded"
+              ,
+              method="POST"
+              action=""
+              class="formUsers"
+            >
+              <input
+                type="text"
+                name="username"
+                placeholder="username"
+                class="usernameInputUsers , w-100 , p-3"
+              />
+              <input
+                type="text"
+                name="password"
+                placeholder="password"
+                class="passwordInputUsers , w-100 , p-3"
+              />
+
+              <select class="w-100 p-3" name="select">
+                <option value="">select Course Title</option>
+                <% courses.forEach(e => { %>
+
+                <option name="title"><%= e.title %></option>
+
+                <% }) %>
+              </select>
+              <button type="submit " class="w-50 , p-2 ," id="UserBtn">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="users-div">
+      <ul class="users-ul">
+        <li class="li-one">Username</li>
+        <li class="li-two">Password</li>
+        <li class="li-three">Title</li>
+      </ul>
+    </div>
+    <% users.forEach(e => { %>
+
+    <div class="users-div">
+      <ul class="users-ul">
+        <li><%= e.username %></li>
+        <li><%= e.password %></li>
+        <li><%= e.title %></li>
+      </ul>
+    </div>
+
+    <% }) %>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

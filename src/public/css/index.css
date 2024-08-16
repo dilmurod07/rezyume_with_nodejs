@@ -1,0 +1,175 @@
+.body {
+  background-color: #420d09;
+}
+.form {
+  width: 380px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: darkblue;
+  border-radius: 25px;
+  transform: translateX(420px);
+  margin-top: 75px;
+}
+.h1 {
+  width: 480px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: brown;
+  border-radius: 25px;
+  transform: translateX(540px) translateY(0px);
+  text-align: center;
+}
+
+.input1 {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  border-radius: 25px;
+  text-align: center;
+  width: 350px;
+  height: 60px;
+  margin-top: 50px;
+  margin-left: 12px;
+}
+.input2 {
+  background-color: black;
+  margin-top: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 25px;
+  text-align: center;
+  width: 350px;
+  height: 60px;
+  margin-left: 12px;
+}
+input:hover {
+  background-color: darkblue;
+  color: deepskyblue;
+}
+#btn {
+  width: 250px;
+  height: 60px;
+  border-radius: 35px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  margin-top: 50px;
+  transform: translateX(70px);
+}
+.users-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: blueviolet;
+  color: gold;
+  list-style: none;
+  border-radius: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  /* width: 1100px;
+  transform: translateX(180px); */
+}
+
+.users-page-title {
+  font-size: 45px;
+  text-align: center;
+  transform: translateX(-32px);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.usernameInputUsers {
+  margin-bottom: 25px;
+}
+.passwordInputUsers {
+  margin-bottom: 25px;
+}
+.roleInputUsers {
+  margin-bottom: 25px;
+}
+.groupInputUsers {
+  margin-bottom: 25px;
+}
+#CreatedUsersBtn {
+  transform: translateX(605px);
+  margin-bottom: 25px;
+  height: 50px;
+  width: 250px;
+}
+#selectGroups {
+  margin-top: 25px;
+}
+#UserBtn {
+  margin-top: 25px;
+  transform: translateX(120px);
+}
+
+.h2 {
+  transform: translateX(140px);
+  width: 250px;
+  border-radius: 15px;
+  background-color: blue;
+  height: 80px;
+}
+.h3 {
+  transform: translateX(480px);
+  width: 250px;
+  border-radius: 15px;
+  background-color: blue;
+  height: 80px;
+}
+.teacherbtn {
+  transform: translateX(550px);
+  font-size: 24px;
+  width: 250px;
+  border-radius: 15px;
+  background-color: blue;
+  height: 80px;
+}
+#select {
+  margin-top: 25px;
+}
+.users-div {
+  width: 1240px;
+  margin: 0 auto;
+}
+#input_teacher_groupname {
+  transform: translateY(25px);
+}
+.h3 {
+  transform: translateX(630px);
+  width: 250px;
+  border-radius: 15px;
+  background-color: blue;
+  height: 80px;
+  font-size: 24px;
+}
+#information_about_me {
+  color: white;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 24px;
+}
+#informations {
+  background-color: #420d09;
+  width: 1240px;
+  margin: 0 auto;
+}
+#information_howuseproject {
+  font-size: 24px;
+  color: white;
+}
+#users {
+  list-style-type: decimal-leading-zero;
+  margin-top: 75px;
+}
+#users_information {
+  margin-top: 8px;
+}

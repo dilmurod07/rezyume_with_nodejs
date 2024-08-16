@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "username": "Baxtiyor",
+        "password": "Baxtiyor",
+        "groupname": [
+            {
+                "id": 1,
+                "groupname": "NT-105",
+                "title": "web-dasturlash"
+            }
+        ],
+        "role": "teacher",
+        "title": "Web-dasturlash"
+    },
+    {
+        "id": 2,
+        "username": "Abduvohob",
+        "password": "993033532",
+        "role": "admin"
+    },
+    {
+        "id": 3,
+        "username": "master",
+        "password": "master",
+        "groupname": "NT-105",
+        "grouptitle": "web-dasturlash",
+        "role": "student"
+    },
+    {
+        "id": 4,
+        "username": "Abdulloh",
+        "password": "Abdulloh",
+        "role": "teacher",
+        "group": [],
+        "title": "web-dizayn"
+    }
+]

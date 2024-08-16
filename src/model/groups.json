@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "groupname": "NT-105",
+        "title": "web-dasturlash",
+        "teacher": "Baxtiyor",
+        "students": [
+            {
+                "id": 1,
+                "username": "master",
+                "password": "master",
+                "groupname": "NT-105",
+                "grouptitle": "web-dasturlash"
+            }
+        ]
+    }
+]

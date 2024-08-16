@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="body">
+    <h1 class="h1"><%= user.username %> STUDENT PAGE</h1>
+    <form
+      action="/api/teacher-back"
+      enctype="application/x-www-form-urlencoded"
+      method="post"
+    >
+      <button class="h3" type="submit" name="Menu" value="Menu">Menu</button>
+    </form>
+    <div class="users-div">
+      <ul class="users-ul">
+        <li>Username</li>
+        <li>Group Name</li>
+        <li>Group Title</li>
+      </ul>
+    </div>
+
+    <div class="users-div">
+      <ul class="users-ul">
+        <li><%= user.username %></li>
+        <li><%= user.groupname %></li>
+        <li><%= user.grouptitle %></li>
+      </ul>
+    </div>
+
+    <h1 class="h1">HOMEWORKS</h1>
+
+    <ul class="users-ul">
+      <li>Groupname</li>
+      <li>Homework Date</li>
+      <li>Homework topic</li>
+    </ul>
+
+    <% hw.forEach( e => { %>
+
+    <div class="users-div">
+      <ul class="users-ul">
+        <li><%= e.groupname %></li>
+        <li><%= e.Date %></li>
+        <li><%= e.homeworkText %></li>
+      </ul>
+    </div>
+
+    <% }) %>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
